@@ -25,7 +25,7 @@ En este repositorio, se van a adjuntar 2 carpetas principales:
   - Un fichero llamado ***muchasIngestas.txt*** que contiene información sobre muchas ingestas realizadas por una persona. Se utilizará para probar distintas funcionalidades de la aplicación.
   - Un fichero llamado ***datos.html*** que contiene una tabla con datos de distintas ingestas. Este fichero ha sido generado a través de la aplicación, a través de la funcionalidad HTML que se explicará mas adelante.
  
-Por otro lado, también se adjunta un documento pdf llamado **Memoria Ejercicio Práctico.pdf** que contiene un manual del usuario donde se explica brevemente las funcionalidades de la aplicación y un manual del programador donde se explican las distintas clases utilizadas, su función y los aspectos mas relevantes de la implementación del proyecto.
+Por otro lado, también se adjunta un documento PDF llamado **Memoria_Ejercicio_Práctico.pdf** que contiene un manual del usuario donde se explica brevemente las funcionalidades de la aplicación y un manual del programador donde se explican las distintas clases utilizadas, su función y los aspectos mas relevantes de la implementación del proyecto.
 
 # - Funcionalidades del programa
 
