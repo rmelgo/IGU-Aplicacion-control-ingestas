@@ -1,0 +1,21 @@
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\bin\Debug\Practica final para el dios de la programacion.exe.config
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\bin\Debug\Practica final para el dios de la programacion.exe
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\bin\Debug\Practica final para el dios de la programacion.pdb
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.csprojAssemblyReference.cache
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\MainWindow.g.cs
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\App.g.cs
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion_MarkupCompile.cache
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion_MarkupCompile.lref
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\MainWindow.baml
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.g.resources
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica_final_para_el_dios_de_la_programacion.Properties.Resources.resources
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.csproj.GenerateResource.cache
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.csproj.CoreCompileInputs.cache
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.exe
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\Practica final para el dios de la programacion.pdb
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaAgregarIngesta.g.cs
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaAgregarIngesta.baml
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaVisualizarIngestas.g.cs
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaVisualizarIngestas.baml
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaModificarIngesta.g.cs
+C:\Users\Raul_\source\repos\Practica final para el dios de la programacion\obj\Debug\VentanaModificarIngesta.baml

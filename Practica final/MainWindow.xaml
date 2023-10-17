@@ -1,0 +1,210 @@
+﻿<Window x:Class="Practica_final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Practica_final="clr-namespace:Practica_final;assembly="
+        mc:Ignorable="d"
+        Title="Control de calorias" Height="570" Width="1000" MinWidth="500" MinHeight="285" Icon="logo_calorias.png">
+
+    <Grid x:Name="elGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions> 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color A="220" R="26" G="32" B="40" />
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="4">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color A="220" R="49" G="66" B="82" />
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2">
+            <Image Margin="0, 15" Name="image1" Stretch="UniformToFill" Width="120" Source="logo_calorias.png" />
+            
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Height="50" Width="7">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                
+                <Button Name="BotonIngesta" Content="Añadir ingesta" Width="200" Height="50" Margin="0, 2" HorizontalAlignment="Left" Grid.Column="0" BorderThickness="0" Foreground="White" FontFamily="Calibri" FontSize="16" Click="BotonIngesta_Click">
+                <Button.Background>
+                    <SolidColorBrush>
+                        <SolidColorBrush.Color>
+                            <Color R="0" G="80" B="0" />
+                        </SolidColorBrush.Color>
+                    </SolidColorBrush>
+                </Button.Background>
+            </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Height="50" Width="7">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                
+                <Button Content="Ver detalle ingesta" Width="200" Height="50" Grid.Column="0" Margin="0, 2" HorizontalAlignment="Left" BorderThickness="0" Foreground="White" FontFamily="Calibri" FontSize="16" Click="MenuItem_Click">
+                    <Button.Background>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="0" G="80" B="0" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Height="50" Width="7">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Button Content="Cargar datos" Width="200" Height="50" Grid.Column="0" Margin="0, 2" HorizontalAlignment="Left" BorderThickness="0" Foreground="White" FontFamily="Calibri" FontSize="16" Click="Button_Click">
+                    <Button.Background>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="0" G="80" B="0" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Height="50" Width="7">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Button Content="Guardar datos" Width="200" Height="50" Grid.Column="0" Margin="0, 2" HorizontalAlignment="Left" BorderThickness="0" Foreground="White" FontFamily="Calibri" FontSize="16" Click="Button_Click_1">
+                    <Button.Background>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="0" G="80" B="0" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Height="50" Width="7">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Button Content="HTML" Width="200" Height="50" Grid.Column="0" Margin="0, 2" HorizontalAlignment="Left" BorderThickness="0" Foreground="White" FontFamily="Calibri" FontSize="16" Click="Button_Click_2">
+                    <Button.Background>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="0" G="80" B="0" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Name="RectaguloVolverPrincipal" Height="50" Width="7" Visibility="Hidden">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                
+                <Button Name="BotonVolverGraficoPrincipal" Content="Volver al grafico principal" Margin="0, 2" Width="200" Height="50" BorderThickness="0" Grid.Column="0" HorizontalAlignment="Left" Foreground="White" FontFamily="Calibri" FontSize="16" Click="BotonVolverGraficoPrincipal_Click" Visibility="Hidden">
+                <Button.Background>
+                    <SolidColorBrush>
+                        <SolidColorBrush.Color>
+                            <Color R="0" G="80" B="0" />
+                        </SolidColorBrush.Color>
+                    </SolidColorBrush>
+                </Button.Background>
+            </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Name="RectaguloGraficoSectores" Height="50" Width="7" Visibility="Hidden">
+                    <Rectangle.Fill>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="220" R="0" G="80" B="200"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Button Name="BotonVerGraficoSectores" Content="Ver el grafico de sectores" Margin="0, 2" Width="200" Height="50" BorderThickness="0" Grid.Column="0" HorizontalAlignment="Left" Foreground="White" FontFamily="Calibri" FontSize="16" Click="BotonVerGraficoSectores_Click" Visibility="Hidden">
+                    <Button.Background>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="0" G="80" B="0" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
+        
+
+        <Button Name="Boton_derecha" Content=">" Grid.Column="3" Height="20" Width="20" Click="Boton_derecha_Click" IsEnabled="False"/>
+        <Button Name="Boton_izquierda" Content="&lt;" Grid.Column="2" Height="20" Width="20" Click="Boton_izquierda_Click" IsEnabled="False"/>
+
+        <Canvas x:Name="lienzoGrafico" Margin="30, 0, 30, 20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Background="AntiqueWhite" SizeChanged="lienzoGrafico_SizeChanged">
+        </Canvas>
+    </Grid>
+
+</Window>
