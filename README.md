@@ -4,7 +4,7 @@
 
 # - Introducción
 
-Proyecto realizado en la asignatura de Interfaces Gráficas de Usuario del grado de Ingenieria Informática de la Universidad de Salamanca. 
+Proyecto realizado en la asignatura de Interfaces Gráficas de Usuario del grado de Ingenieria Informática de la Universidad de Salamanca. El enunciado del proyecto se encuentra subido en el repositorio en un archivo PDF llamado *ENUNCIADO_Práctica_2021.pdf*.
   
 El principal objetivo de este proyecto es la realización de una aplicación en el entorno de WPF que permita almacenar y controlar el conjunto de calorias consumida por una persona.
 De esta manera, el objetivo es diseñar una interfaz que permita al usuario introducir las calorias de las distintas ingestas de comida que realizan una persona a lo largo de un día determinado y mostrar esa información en distintos gráficos.
