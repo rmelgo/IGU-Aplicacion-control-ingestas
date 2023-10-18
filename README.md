@@ -27,5 +27,26 @@ En este repositorio, se van a adjuntar 2 carpetas principales:
  
 Por otro lado, también se adjunta un documento PDF llamado **Memoria_Ejercicio_Práctico.pdf** que contiene un manual del usuario donde se explica brevemente las funcionalidades de la aplicación y un manual del programador donde se explican las distintas clases utilizadas, su función y los aspectos mas relevantes de la implementación del proyecto.
 
-# - Funcionalidades del programa
+# - Funcionalidades de la aplicación
+
+## Pantalla principal
+
+Al abrir el fichero ***Practica_final.exe***, inicialmente se presentará una ventana similar a la que se presenta en la siguiente imagen:
+
+![Ejemplo ejecucion 1](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/1105c553-fe2c-4ed2-bedb-d7d777f67d62)
+
+La ventana principal se agrupa en **2 secciones principales**:
+
+- Por un lado, existe una sección grande de color salmón donde se representarán gráficamente (a través de un gráfico de barras) los valores de las ingestas almacenadas. Esta sección se encuentra inicialmente vacía ya que no se han almacenado ingestas en la aplicación. 
+
+- Por otro lado, existe una barra lateral con 5 botones que implementan 5 funcionalidades básicas. A continuación se explicarán brevemente cada una de estas 5 funcionalidades:
+
+  - **Añadir ingesta**: Esta funcionalidad permite al usuario añadir el valor de una nueva ingesta. Se solicitará al usuario la fecha de la ingesta y los valores calóricos de cada una de las comidas realizadas durante ese día.
+  - **Ver detalle ingesta**: Esta funcionalidad permite al usuario ver con mayor detalle la información de cada una de las ingestas que se encuentran almacenadas en la aplicación. Dentro de este apartado el usuario podra utilizar filtros para la busqueda de ingestas, así como eliminar un ingesta o modificar los valores caloricos de una ingesta determinada.
+  - **Cargar datos**: Esta funcionalidad permite cargar datos de una serie de ingestas, los cuales deben estar almacenados en un fichero de texto siguiendo un formato determinado.
+  - **Guardar datos**: Esta funcionalidad permite guardar los datos de las ingestas almacenados en la aplicación en un fichero de texto. El formato en el que se guarden las ingestas será el mismo que maneja la aplicación en el cargado de ingestas.
+  - **HTML**: Esta funcionalidad permite guardar los datos de las ingestas almacenados en la aplicación en un fichero HTML. Similar a la funcionalidad anterior pero los datos se agrupan en una tabla HTML.
+ 
+A continuación se describirá de manera mas detallada cada una de estas funcionalidades de la aplicación.
+
 
