@@ -49,4 +49,32 @@ La ventana principal se agrupa en **2 secciones principales**:
  
 A continuación se describirá de manera mas detallada cada una de estas funcionalidades de la aplicación.
 
+## Añadir ingestas
+
+Para añadir una nueva ingesta, el usuario debe hacer click en el botón ***Añadir ingesta*** que se encuentra en la parte izquierda de la ventana principal. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
+
+![Ejemplo ejecucion 2](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/c6193589-805e-4de9-bd66-f24a1b6c6b3b)
+
+En esta nueva ventana, se distinguen 2 secciones:
+
+- Una sección en la parte izquierda en la que el usuario introducirá la fecha de la ingesta que desea añadir
+- Una sección en la parte derecha en la que el usuario introducirá las calorias consumidas en cada una de las comidas del día
+
+Para añadir la fecha, el usuario puede introducirla directamente en el recuadro blanco o bien puede desplazarse por el calendario interactivo y seleccionar la fecha correspondiente.
+
+Cada ingesta esta formada por 6 comidas (Desayuno, Aperitivo, Comida, Merienda, Cena y Otros). Si el usuario no introduce ningun valor para alguna de estas comidas, la aplicación considerará que las calorias ingeridas para esa determinada comida es de 0.
+
+Una vez completada toda la información sobre una ingesta, para añadir definitivamente la ingesta, el usuario una vez introduce los datos correspondientes pulsará el botón de *"Aceptar"*. Si por alguna razón, el usuario quiere cancelar el proceso de añadir la ingesta puede pulsar el botón de *"Cancelar"* para finalizar la operación.
+
+<<Ejemplo>>
+
+<<hablar de como se actualiza la ventana principal>>
+
+Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas principales por las que se puede producir un error al añadir una ingesta:
+
+- **Fecha de ingesta incorrecta**: El usuario o bien no ha introducido una fecha o bien el formato de la fecha introducida es erroneo. La fecha debe introducirse en el formato ***dd/mm/aaaa***.
+- **Fecha de ingesta repetida**: El usuario intenta añadir una ingesta cuando ya existe una ingesta almacenada en la aplicación con la misma fecha.
+- **Formato de calorias erróneo**: El usuario no ha introducido un valor númerico en alguna de las comidas que forman la ingesta.
+
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Además, los datos de dicha ingesta serán descartados y no se almacenarán en el sistema.
 
