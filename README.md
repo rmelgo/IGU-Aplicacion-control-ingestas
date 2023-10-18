@@ -72,7 +72,7 @@ Una vez completada toda la información sobre una ingesta, para añadir definiti
 
 Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas principales por las que se puede producir un error al añadir una ingesta:
 
-- **Fecha de ingesta incorrecta**: El usuario o bien no ha introducido una fecha o bien el formato de la fecha introducida es erroneo. La fecha debe introducirse en el formato ***dd/mm/aaaa***.
+- **Fecha de ingesta incorrecta**: El usuario o bien no ha introducido una fecha o bien el formato de la fecha introducida es erroneo. La fecha debe introducirse en el formato ````dd/mm/aaaa```.
 - **Fecha de ingesta repetida**: El usuario intenta añadir una ingesta cuando ya existe una ingesta almacenada en la aplicación con la misma fecha.
 - **Formato de calorias erróneo**: El usuario no ha introducido un valor númerico en alguna de las comidas que forman la ingesta.
 
