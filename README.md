@@ -1,6 +1,8 @@
-# Simulación del tráfico de un cruce mediante programación concurrente en el entorno UNIX
+# Aplicación de escritorio en Windows par la gestión de las calorias ingeridas por una persona
 
-![Captura inicial](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/a0cd2c98-4743-4983-aef5-a2f940079616)
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/4445c3ad-21bf-4cd1-a223-890f9064c23b">
+</p>
 
 # - Introducción
 
@@ -53,7 +55,9 @@ A continuación se describirá de manera mas detallada cada una de estas funcion
 
 Para añadir una nueva ingesta, el usuario debe hacer click en el botón ***Añadir ingesta*** que se encuentra en la parte izquierda de la ventana principal. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
 
-![Ejemplo ejecucion 2](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/c6193589-805e-4de9-bd66-f24a1b6c6b3b)
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/c6193589-805e-4de9-bd66-f24a1b6c6b3b">
+</p>
 
 En esta nueva ventana, se distinguen 2 secciones:
 
@@ -62,13 +66,19 @@ En esta nueva ventana, se distinguen 2 secciones:
 
 Para añadir la fecha, el usuario puede introducirla directamente en el recuadro blanco o bien puede desplazarse por el calendario interactivo y seleccionar la fecha correspondiente.
 
-Cada ingesta esta formada por 6 comidas (Desayuno, Aperitivo, Comida, Merienda, Cena y Otros). Si el usuario no introduce ningun valor para alguna de estas comidas, la aplicación considerará que las calorias ingeridas para esa determinada comida es de 0.
+Cada ingesta esta formada por 6 comidas (*Desayuno*, *Aperitivo*, *Comida*, *Merienda*, *Cena* y *Otros*). Si el usuario no introduce ningun valor para alguna de estas comidas, la aplicación considerará que las calorias ingeridas para esa determinada comida es de 0.
 
 Una vez completada toda la información sobre una ingesta, para añadir definitivamente la ingesta, el usuario una vez introduce los datos correspondientes pulsará el botón de *"Aceptar"*. Si por alguna razón, el usuario quiere cancelar el proceso de añadir la ingesta puede pulsar el botón de *"Cancelar"* para finalizar la operación.
 
-<<Ejemplo>>
+Al añadir la ingesta, se actualizará la ventana principal de forma que el gráfico de barras se actualizará con la información de la última ingesta añadida. De esta manera, cada vez que el usuario añada una ingesta, se representará de manera automática en el gráfico los valores calóricos del ingesta así como su fecha.
 
-<<hablar de como se actualiza la ventana principal>>
+En las siguientes imágenes, se adjunta un ejemplo de adicción de una ingesta:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/a2940223-827d-4586-9b70-fd214a84fc02">
+</p>
+
+![Ejemplo ejecucion 4](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/b5f8b00e-8dd4-40de-85ca-a36a9020841b)
 
 Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas principales por las que se puede producir un error al añadir una ingesta:
 
@@ -77,4 +87,42 @@ Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas pr
 - **Formato de calorias erróneo**: El usuario no ha introducido un valor númerico en alguna de las comidas que forman la ingesta.
 
 Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Además, los datos de dicha ingesta serán descartados y no se almacenarán en el sistema.
+
+Un posible ejemplo de caso de error es el siguiente:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/f89ab1a5-ede0-4a2d-88a2-734d704e0c17">
+</p>
+
+En este caso, se ha intentado añadir una ingesta sin fecha.
+
+## Cargar datos de ingestas
+
+Para cargar datos de ingestas que se encuentren almacenados en un fichero de texto, el usuario debe hacer click en el botón ***Cargar datos*** que se encuentra en la parte izquierda de la ventana principal. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
+
+![Ejemplo ejecucion 6](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/a63b2cfd-a42c-4530-992d-ad1ca4eadbe9)
+
+Como se puede observar, se abre el explorador de archivos de Windows, el cual va a permitir al usuario buscar y navegar por los archivos por todo el equipo y seleccionar el fichero que contenga los datos de las ingestas.
+
+Para cargar los datos de una serie de ingestas, el fichero de texto donde se almacenan las ingestas debe cumplir la siguiente sintaxis:
+
+```<fecha-ingesta> <calorias-desayuno> <calorias-aperitivo> <calorias-comida> <calorias-merienda> <calorias-cena> <calorias-otros>```
+
+Significado de los parámetros:
+
+- **fecha-ingesta**: Fecha en la que se produce la ingesta siguiendo el formato ```dd/mm/aaaa```
+- **calorias-desayuno**: Número entero que representa las calorias ingeridas en el desayuno
+- **calorias-aperitivo**: Número entero que representa las calorias ingeridas en el aperitivo
+- **calorias-comida**: Número entero que representa las calorias ingeridas en la comida
+- **calorias-merienda**: Número entero que representa las calorias ingeridas en la merienda
+- **calorias-cena**: Número entero que representa las calorias ingeridas en la cena
+- **calorias-otros**: Número entero que representa las otras calorias ingeridas
+
+Es importante que cada uno de estos valores este separado por un carácter espacio y que cada línea del fichero contenga los valores de una única ingesta.
+
+Al añadir los datos de las distintas ingestas, se actualizará la ventana principal de forma que el gráfico de barras se actualizará con la información de las últimas ingestas añadidas. De esta manera, cada vez que el usuario cargué una serie de ingestas, se representará de manera automática en el gráfico los valores calóricos de dichas ingestas así como su fecha.
+
+**Nota**: Cuando se cargan los valores de una serie de ingestas, se borrarán de la aplicación los datos de las ingestas previamente almacenadas.
+
+En las siguientes imágenes, se adjunta un ejemplo de cargado de una serie de ingestas:
 
