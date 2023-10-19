@@ -174,7 +174,7 @@ Al guardar los datos de las distintas ingestas, se mostrara un mensaje al usuari
 El formato de las ingestas guardadas sera el mismo que el formato explicado en la funcionalidad de cargado de ingestas.  
 Esto se realiza así para que los datos guardados por un usuario puedan ser posteriormente reutilizados y cargados de nuevo en la aplicación
 
-### Resultados obtenidos en la carga de ingestas
+### Resultados obtenidos en el guardado de ingestas
 
 En las siguientes imagenes, se adjunta un ejemplo de guardado de una serie de ingestas:
 
@@ -322,3 +322,41 @@ Si se produce alguno de estos casos, se desplegará una pequeña ventana alertan
 
 En este caso, se ha intentado asignar a la ingesta una fecha que coincide con la fecha de otra ingesta almacenada en la aplicación.
 
+### Eliminar ingesta
+
+Para modificar una ingesta, el usuario debe hacer click en el botón ***Eliminar ingesta*** que se encuentra en la parte izquierda de la ventana. Al pulsar este botón, se eliminará la ingesta seleccionada y ya no se encontrará almacenada en la aplicación. A continuación se muestra un ejemplo:
+
+![Ejemplo ejecucion 23](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/f390bf62-3615-4f7f-bd56-86b196a74390)
+
+## Funcionalidades adicionales en la ventana principal
+
+Cuando el usuario selecciona una de las ingestas en la ventana de detalle de ingestas, se muestra el detalle de dicha ingesta seleccionada en la segunda tabla, mostrandose los valores caloricos de cada una de las comidas que conforman la ingesta. 
+
+Por otra parte, en la ventana principal se muestra un nuevo gráfico de barrras donde se representa con barras cada uno de los valores caloricos de las comidas que conforman la ingesta que se ha seleccionado.
+
+Además, en la barra lateral aparecen 2 nuevos botones que implementan 2 "nuevas" funcionalidades. A continuación se explicarán brevemente cada una de estas 2 funcionalidades:
+
+- **Volver al gráfico principal**: La aplicación vuelve a mostrar el gráfico principal en el que se representan gráficamente todas las ingestas.
+- **Ver el gráfico de sectores**: La aplicación muestra la información detallada de la ingesta seleccionada pero en un gráfico de sectores en vez de un gráfico de barras.
+
+Al seleccionar una ingesta en la primera tabla, la apariencia de la ventana principal es la siguiente:
+
+![Ejemplo ejecucion 24](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/5bb82eaf-da55-4a83-b6c5-22d9d9d7cc5e)
+
+### Volver al gráfico principal
+
+Para volver al gráfico principal, el usuario debe hacer click en el botón ***Volver al gráfico principal*** que se encuentra en la parte izquierda de la ventana. Al pulsar este botón, el usuario podrá visualizar de nuevo gráficamente todas las ingestas almacenadas en la aplicación.
+
+### Ver el gráfico de sectores
+
+Para ver el gráfico de sectores, el usuario debe hacer click en el botón ***Ver el gráfico de sectores*** que se encuentra en la parte izquierda de la ventana. Al pulsar este botón, el usuario podrá visualizar la información detallada de la ingesta seleccionada en un gráfico de sectores. 
+
+Complementariamente, se muestra una pequeña leyenda indicando el porcentaje con respecto a las calorias totales que representa las calorias de cada una de las comidas de la ingesta. A continuación se muestra un ejemplo:
+
+![Ejemplo ejecucion 25](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/e446bf46-5e7f-4f1b-a7b4-de48db2e6012)
+
+### Comentario adicional sobre la representación de ingestas en el gráfico de barras
+
+En la sección gráfica de la ventana principal, existe hueco para representar los datos de **10 ingestas**. Si en la aplicación se encuentran almacenadas más de 10 ingestas, no podrán representarse todas las ingestas al mismo tiempo. 
+
+Es por esto por lo que existen 2 pequeños botones en la esquina superior derecha que permiten avanzar hacia delante (*botón ">"*) y hacia atrás (*botón "<"*) repectivamente permitiendo ver las ***10 siguientes ingestas*** o las ***10 ingestas anteriores***.
