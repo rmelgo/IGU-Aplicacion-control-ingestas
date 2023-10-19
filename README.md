@@ -90,9 +90,7 @@ Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas pr
 - **Fecha de ingesta repetida**: El usuario intenta añadir una ingesta cuando ya existe una ingesta almacenada en la aplicación con la misma fecha.
 - **Formato de calorias erróneo**: El usuario no ha introducido un valor númerico en alguna de las comidas que forman la ingesta.
 
-Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Además, los datos de dicha ingesta serán descartados y no se almacenarán en el sistema.
-
-Un posible ejemplo de caso de error es el siguiente:
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Además, los datos de dicha ingesta serán descartados y no se almacenarán en el sistema. Un posible ejemplo de caso de error es el siguiente:
 
 <p align="center">
   <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/f89ab1a5-ede0-4a2d-88a2-734d704e0c17">
@@ -144,12 +142,10 @@ En las siguiente imagen, se adjunta un ejemplo de cargado de una serie de ingest
 
 Al realizar el cargado de ingestas, es posible que se produzca un error. Existen 2 causas principales por las que se puede producir un error al realizar el cargado de una serie de ingestas:
 
-- **Formato incorrecto**: El fichero en el que se encuentran almacenadas las ingestas y se desea cargar no sigue el formato previamente indicado. A parrtir de este punto finaliza la opracion.
+- **Formato incorrecto**: El fichero en el que se encuentran almacenadas las ingestas y se desea cargar no sigue el formato previamente indicado. A partir de este punto finaliza la operación.
 - **Fecha duplicada**: En el fichero se encuentran almacenadas dos o mas ingestas con la misma fecha. En este caso, solo se descartará la ingesta con la fecha repetida, cargando el resto de ingestas con éxito.
 
-Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación.
-
-Un posible ejemplo de caso de error es el siguiente:
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Un posible ejemplo de caso de error es el siguiente:
 
 <p align="center">
   <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/2b65ae2e-e43d-411d-9920-acae8e4e57da">
@@ -220,10 +216,58 @@ Para ver el detalle de una ingesta almacenada en la aplicación, el usuario debe
 
 ![Ejemplo ejecucion 15](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/bc90980e-5362-4704-8747-d0b01359ee95)
 
+La ventana del detalle de la ingesta se agrupa en **2 secciones principales**:
 
+- Por un lado, existe una sección grande de color gris que cuenta con 2 tablas:
 
+  - La **primera tabla** muestra todas las ingestas almacenadas en el sistema. Para cada ingesta se muestra su fecha y el total de calorias ingeridas en dicha fecha
+  - La **segunda tabla** muestra los datos caloricos de cada una de las comidas de una ingesta. Inicialmente esta tabla se encuentra vacía. Solo se mostrará información detallada de una ingesta cuando el usuario seleccione una ingesta en la primera tabla.
+  
+- Por otro lado, existe una barra lateral donde dicha barra lateral a su vez se divide en 3 secciones:
 
+  - En la **primera sección**, existe una caja de texto donde el usuario puede filtrar las ingestas que tengan un total de calorias determinado.
+  - En la **segunda sección**, existe una caja de texto donde el usuario puede buscar una ingesta con una fecha determinada. Para añadir la fecha, el usuario puede introducirla directamente en la caja de texto o bien puede desplazarse por el calendario interactivo y seleccionar la fecha correspondiente.
+  - En la **tercera sección**, existen 2 botones que implementan 2 funcionalidades básicas. A continuación se explicarán brevemente cada una de estas 2 funcionalidades:
 
+    - **Aplicar filtros**: Esta funcionalidad permite al usuario filtrar las ingestas almacenadas en el sistema en función de los filtros introducidos por el usuario, de forma que solo se muestren las ingestas que cumplan con los filtros.
+    - **Restaurar filtros**: Esta funcionalidad permite al usuario resetear los filtros aplicados de manera que vuelvan a mostrarse todas las ingestas almacenadas en el sistema.
+
+A continuación se describirá de manera mas detallada cada una de estas funcionalidades de esta ventana secundaria.
+
+### Aplicar filtros
+
+Para filtrar las ingestas almacenadas en el sistema, el usuario debe hacer click en el botón ***Aplicar filtros*** que se encuentra en la parte izquierda de la ventana. 
+
+La ventana cuenta con 2 filtros fundamentales:
+
+- **Total calorias**: El usuario puede introducir en el recuadro correspondiente el número total de calorias de las ingestas que desea filtrar.
+- **Fecha de la ingesta**: El usuario puede introducir en el recuadro correspondiente la fecha de la ingesta que desea filtrar.
+
+En la siguiente imagen, se muestra un ejemplo de filtrado de ingesta, combinando los 2 filtros simultaneamente:
+
+![Ejemplo ejecucion 17](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/f79fd5e7-baa7-4fb8-b91e-b8b38f27de3a)
+
+#### Errores en el filtrado
+
+Al realizar el filtrado de ingestas, es posible que se produzca un error. Existen 2 causas principales por las que se puede producir un error al realizar el filtrado de ingestas:
+
+- **Total de calorias con formato incorrecto**: El usuario ha introducido algo distinto a un número en el recuadro correspondiente el número total de calorias.
+- **Fecha de la ingesta con formato incorrecto**: El usuario ha introducido la fecha de la ingesta recuadro correspondiente la fecha de la ingesta sin seguir el formato adecuado. El formato de las fechas debe ser ```dd\mm\aaaa```
+
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Un posible ejemplo de caso de error es el siguiente:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/f0bd1ed7-b54d-43a2-9198-8519ca85e5cf">
+</p>
+
+### Restaurar filtros
+
+Para restaurar los filtros aplicados sobre las ingestas almacenadas en el sistema, el usuario debe hacer click en el botón ***Restaurar filtros*** que se encuentra en la parte izquierda de la ventana. 
+
+Al pulsar este botón, se producen 2 cambios fundamentales:
+
+- Por un lado, se limpian los recuadros asociados a los filtros, devolviendolos a su estado original, es decir, vacíos.
+- Por otro lado, se muestran de nuevo todas las ingestas almacenadas en el sistema en la primera tabla.
 
 
 
