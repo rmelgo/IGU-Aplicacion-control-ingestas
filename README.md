@@ -59,6 +59,8 @@ Para añadir una nueva ingesta, el usuario debe hacer click en el botón ***Aña
   <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/c6193589-805e-4de9-bd66-f24a1b6c6b3b">
 </p>
 
+### Estructura y funcionamiento de la nueva ventana
+
 En esta nueva ventana, se distinguen 2 secciones:
 
 - Una sección en la parte izquierda en la que el usuario introducirá la fecha de la ingesta que desea añadir
@@ -79,6 +81,8 @@ En las siguientes imágenes, se adjunta un ejemplo de adicción de una ingesta:
 </p>
 
 ![Ejemplo ejecucion 4](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/b5f8b00e-8dd4-40de-85ca-a36a9020841b)
+
+### Errores en la adicción de ingestas
 
 Al añadir una ingesta, es posible que se produzca un error. Existen 3 causas principales por las que se puede producir un error al añadir una ingesta:
 
@@ -104,6 +108,8 @@ Para cargar datos de ingestas que se encuentren almacenados en un fichero de tex
 
 Como se puede observar, se abre el explorador de archivos de Windows, el cual va a permitir al usuario buscar y navegar por los archivos por todo el equipo y seleccionar el fichero que contenga los datos de las ingestas.
 
+### Formato del fichero en la carga de ingestas
+
 Para cargar los datos de una serie de ingestas, el fichero de texto donde se almacenan las ingestas debe cumplir la siguiente sintaxis:
 
 ```<fecha-ingesta> <calorias-desayuno> <calorias-aperitivo> <calorias-comida> <calorias-merienda> <calorias-cena> <calorias-otros>```
@@ -120,9 +126,37 @@ Significado de los parámetros:
 
 Es importante que cada uno de estos valores este separado por un carácter espacio y que cada línea del fichero contenga los valores de una única ingesta.
 
+En la siguiente imagen, se adjunta un ejemplo de un fichero que almacena una serie de ingestas siguiendo el formato especificado:
+
+![Ejemplo ejecucion 7](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/ef4c6d6c-165d-45ec-aca3-87455fe55ac2)
+
+### Resultados obtenidos en la carga de ingestas
+
 Al añadir los datos de las distintas ingestas, se actualizará la ventana principal de forma que el gráfico de barras se actualizará con la información de las últimas ingestas añadidas. De esta manera, cada vez que el usuario cargué una serie de ingestas, se representará de manera automática en el gráfico los valores calóricos de dichas ingestas así como su fecha.
 
 **Nota**: Cuando se cargan los valores de una serie de ingestas, se borrarán de la aplicación los datos de las ingestas previamente almacenadas.
 
-En las siguientes imágenes, se adjunta un ejemplo de cargado de una serie de ingestas:
+En las siguiente imagen, se adjunta un ejemplo de cargado de una serie de ingestas, utilizando el fichero ***ingestas.txt***:
+
+![Captura inicial](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/14a62de6-c1c4-4ed1-a140-3911666d4546)
+
+### Errores en la carga de ingestas
+
+Al realizar el cargado de ingestas, es posible que se produzca un error. Existen 2 causas principales por las que se puede producir un error al realizar el cargado de una serie de ingestas:
+
+- **Formato incorrecto**: El fichero en el que se encuentran almacenadas las ingestas y se desea cargar no sigue el formato previamente indicado. A parrtir de este punto finaliza la opracion.
+- **Fecha duplicada**: En el fichero se encuentran almacenadas dos o mas ingestas con la misma fecha. En este caso, solo se descartará la ingesta con la fecha repetida, cargando el resto de ingestas con éxito.
+
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación.
+
+Un posible ejemplo de caso de error es el siguiente:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/2b65ae2e-e43d-411d-9920-acae8e4e57da">
+</p>
+
+En este caso, se ha intentado añadir una ingesta con una fecha repetida.
+
+
+
 
