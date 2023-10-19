@@ -252,7 +252,7 @@ En la siguiente imagen, se muestra un ejemplo de filtrado de ingesta, combinando
 Al realizar el filtrado de ingestas, es posible que se produzca un error. Existen 2 causas principales por las que se puede producir un error al realizar el filtrado de ingestas:
 
 - **Total de calorias con formato incorrecto**: El usuario ha introducido algo distinto a un número en el recuadro correspondiente el número total de calorias.
-- **Fecha de la ingesta con formato incorrecto**: El usuario ha introducido la fecha de la ingesta recuadro correspondiente la fecha de la ingesta sin seguir el formato adecuado. El formato de las fechas debe ser ```dd\mm\aaaa```
+- **Fecha de la ingesta con formato incorrecto**: El usuario ha introducido la fecha de la ingesta recuadro correspondiente la fecha de la ingesta sin seguir el formato adecuado. El formato de las fechas debe ser ```dd\mm\aaaa```.
 
 Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Un posible ejemplo de caso de error es el siguiente:
 
@@ -269,5 +269,56 @@ Al pulsar este botón, se producen 2 cambios fundamentales:
 - Por un lado, se limpian los recuadros asociados a los filtros, devolviendolos a su estado original, es decir, vacíos.
 - Por otro lado, se muestran de nuevo todas las ingestas almacenadas en el sistema en la primera tabla.
 
+### Funcionalidades adicionales
 
+Cuando el usuario selecciona una de las ingestas representada en la primera tabla, se muestra el detalle de dicha ingesta seleccionada en la segunda tabla, mostrandose los valores caloricos de cada una de las comidas que conforman la ingesta.
+Por otra parte, en la barra lateral aparecen 2 nuevos botones que implementan 2 "nuevas" funcionalidades. A continuación se explicarán brevemente cada una de estas 2 funcionalidades:
+
+- **Modificar ingesta**: El usuario puede modificar los datos de la ingesta seleccionada.
+- **Eliminar ingesta**: El usuario puede eliminar del sistema la ingesta seleccionada.
+
+Al seleccionar una ingesta en la primera tabla, la apariencia de la ventana es la siguiente:
+
+![Ejemplo ejecucion 18](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/bed6b9eb-fb25-4aa7-b86e-3ce3db1f1508)
+
+### Modificar ingesta
+
+Para modificar una ingesta, el usuario debe hacer click en el botón ***Modificar ingesta*** que se encuentra en la parte izquierda de la ventana. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/217fd85b-83d8-477f-8eff-c3d96bcdf224">
+</p>
+
+#### Estructura y funcionamiento de la nueva ventana
+
+Como se puede observar, se despliega una ventana similar a la ventana que se desplegaba al añadir una ingesta. Sin embargo, los recuadros de la ventana en vez de encontrarse vacíos se encuentran rellenos con los datos de la ingesta que se desea modificar.
+De esta manera, el usuario puede modificar con libertad los valores de la ingesta.
+
+Una vez modificada toda la información sobre una ingesta, para modificar definitivamente la ingesta, el usuario pulsará el botón de *"Aceptar"*. Si por alguna razón, el usuario quiere cancelar el proceso de modificación de la ingesta puede pulsar el botón de *"Cancelar"* para finalizar la operación.
+
+Al modificar la ingesta, se actualizará la ventana principal de forma que el gráfico de barras se actualizará con la información de la ingesta modificada.
+
+En las siguientes imágenes, se adjunta un ejemplo de modificación de una ingesta:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/46d811fb-f41f-4c84-a3cd-81f15d22cfec">
+</p>
+
+![Ejemplo ejecucion 21](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/728fb335-de54-4f28-813f-6597f70b63e8)
+
+#### Errores en la modificación de ingestas
+
+Al modificar una ingesta, es posible que se produzca un error. Existen 3 causas principales por las que se puede producir un error al modificar una ingesta:
+
+- **Fecha de ingesta incorrecta**: El usuario o bien no ha introducido una fecha o bien el formato de la fecha introducida es erróneo. La fecha debe introducirse en el formato ````dd/mm/aaaa```.
+- **Fecha de ingesta repetida**: El usuario intenta asignar a la ingesta una fecha que coincide con la fecha de otra ingesta almacenada en la aplicación.
+- **Formato de calorias erróneo**: El usuario no ha introducido un valor númerico en alguna de las comidas que forman la ingesta.
+
+Si se produce alguno de estos casos, se desplegará una pequeña ventana alertando al usuario de la situación. Además, los datos de dicha modificación serán descartados y no se almacenarán en el sistema, manteniendose en el sistema los datos originales de la ingesta, antes de realizar la modificación. Un posible ejemplo de caso de error es el siguiente:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/1b32cb50-374d-45c0-ad3c-fb3de7914110">
+</p>
+
+En este caso, se ha intentado asignar a la ingesta una fecha que coincide con la fecha de otra ingesta almacenada en la aplicación.
 
