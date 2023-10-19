@@ -163,7 +163,7 @@ Para guardar datos de ingestas que se encuentren almacenados en la aplicación, 
 
 ![Ejemplo ejecucion 9](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/5f612b78-593d-4e36-86b4-6a21760e26a7)
 
-Como se puede observar, se abre el explorador de archivos de Windows, el cual va a permitir al usuario navegar por los archivos por todo el equipo y seleccionar la ubicación en la que se encontrará el fichero que contendrá los datos de las ingestas.
+Como se puede observar, se abre el explorador de archivos de Windows, el cual va a permitir al usuario navegar por los archivos por todo el equipo y seleccionar la ubicación en la que se guardará el fichero que contendrá los datos de las ingestas.
 
 Al guardar los datos de las distintas ingestas, se mostrara un mensaje al usuario indicando que el proceso de guardado se ha realizado correctamente. El mensaje tiene el siguiente aspecto:
 
@@ -171,7 +171,7 @@ Al guardar los datos de las distintas ingestas, se mostrara un mensaje al usuari
   <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/36fe7ce9-d2c5-4284-8bb2-73b284ac6a92">
 </p>
 
-**Nota**: En el guardado de las ingestas no se considera ningún escenario de error, ya que las ingestas están correctamente almacenadas en la apliación y no se pueden producir errores de formato o de duplciado de fechas.
+**Nota**: En el guardado de las ingestas no se considera ningún escenario de error, ya que las ingestas están correctamente almacenadas en la aplicación y no se pueden producir errores de formato o de duplciado de fechas.
 
 ### Formato del fichero en el guardado de ingestas
 
@@ -180,11 +180,46 @@ Esto se realiza así para que los datos guardados por un usuario puedan ser post
 
 ### Resultados obtenidos en la carga de ingestas
 
-En las siguientes imagenes, se adjunta un ejemplo de guarado de una serie de ingestas:
+En las siguientes imagenes, se adjunta un ejemplo de guardado de una serie de ingestas:
 
 ![Ejemplo ejecucion 10](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/2df16f89-12b4-4695-90ea-5f73fc8f56ec)
 
 ![Ejemplo ejecucion 11](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/e4e441f1-ab25-47b3-a5fd-3ab9fa8615b2)
+
+## Generar HTML con los datos de las ingestas
+
+Para generar un fichero HTML con una tabla que incluya los datos de las ingestas que se encuentran almacenados en la aplicación, el usuario debe hacer click en el botón ***HTML*** que se encuentra en la parte izquierda de la ventana principal. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
+
+![Ejemplo ejecucion 12](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/9be6d020-bf53-4965-8b3d-b1d741657cd8)
+
+Como se puede observar, se abre el explorador de archivos de Windows, el cual va a permitir al usuario navegar por los archivos por todo el equipo y seleccionar la ubicación en la que se guardará el fichero HTML que contendrá los datos de las ingestas.
+
+Al guardar los datos de las distintas ingestas, se mostrara un mensaje al usuario indicando que el proceso de generación del HTML se ha realizado correctamente. El mensaje tiene el siguiente aspecto:
+
+<p align="center">
+  <img src="https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/b5365fcf-1ad9-4ac0-9469-93d79a81c64e">
+</p>
+
+**Nota**: En la generación del fichero HTML con los datos de las ingestas no se considera ningún escenario de error, ya que las ingestas están correctamente almacenadas en la aplicación y no se pueden producir errores de formato o de duplciado de fechas.
+
+### Formato de la tabla HTML
+
+En la tabla HTML, existe una columna para la fecha de la ingesta y una columna para cada ingesta del día. También existe una última columna en la que se incluye el total de calorias ingerido en ese día.
+
+### Resultados obtenidos en la generacion del HTML
+
+En las siguientes imagenes, se adjunta un ejemplo de generación de un fichero HTML con los datos de una serie de ingestas:
+
+![Ejemplo ejecucion 10](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/2df16f89-12b4-4695-90ea-5f73fc8f56ec)
+
+![Ejemplo ejecucion 14](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/078ed7a7-e5a9-468a-94a7-168630324189)
+
+## Ver detalle de ingestas
+
+Para ver el detalle de una ingesta almacenada en la aplicación, el usuario debe hacer click en el botón ***Ver detalle ingesta*** que se encuentra en la parte izquierda de la ventana principal. Al pulsar este botón, se desplegará una ventana con el siguiente aspecto:
+
+![Ejemplo ejecucion 15](https://github.com/rmelgo/IGU-Aplicacion-control-ingestas/assets/145989723/bc90980e-5362-4704-8747-d0b01359ee95)
+
 
 
 
